@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "8d4cd9a3-ba38-4173-9a78-a2602c4821a7",
+		"name": "second_q",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addMovie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "TOKEN",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJJU1NVRURfQVQiOjE2NDMzNDE0NzQ5MDEsIlBBU1NXT1JEIjoiYWRtaW4iLCJVU0VSTkFNRSI6ImFkbWluIiwiRVhQSVJFU19BVCI6MTY0MzM0MTY1NDkwMSwiU1RFUCI6IlNURVBfVkVSSUZZX09UUCIsImV4cCI6MTY0MzM0MjA3NH0.VNXEdOdy7DTgG5Qx3dzNND-rsIGAVafsc0kMazT-C3nS8_cAv3pG2mSjePpCOf2cMz-sbs_p7tULei8ke23wfg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Hoshdar baraye Cobra 11\",\r\n    \"description\": \"Film action khafan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/gateway/admin/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"gateway",
+						"admin",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adminRegister",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6060/gateway/register/admin/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"gateway",
+						"register",
+						"admin",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateMovie",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "TOKEN",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJJU1NVRURfQVQiOjE2NDMzNDE0NzQ5MDEsIlBBU1NXT1JEIjoiYWRtaW4iLCJVU0VSTkFNRSI6ImFkbWluIiwiRVhQSVJFU19BVCI6MTY0MzM0MTY1NDkwMSwiU1RFUCI6IlNURVBfVkVSSUZZX09UUCIsImV4cCI6MTY0MzM0MjA3NH0.VNXEdOdy7DTgG5Qx3dzNND-rsIGAVafsc0kMazT-C3nS8_cAv3pG2mSjePpCOf2cMz-sbs_p7tULei8ke23wfg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Hoshdar baraye Cobra 11\",\r\n    \"description\": \"seriale action khafan\",\r\n    \"rating\":\"0.6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6060/gateway/admin/movie/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"gateway",
+						"admin",
+						"movie",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMovie",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "TOKEN",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJJU1NVRURfQVQiOjE2NDMzNDM2MzYwMjksIlBBU1NXT1JEIjoiYWRtaW4iLCJVU0VSTkFNRSI6ImFkbWluIiwiRVhQSVJFU19BVCI6MTY0MzM0MzgxNjAyOSwiU1RFUCI6IlNURVBfVkVSSUZZX09UUCIsImV4cCI6MTY0MzM0NDIzNn0.s_CUIsy--I93Yy7Ylws_n4NpsSY2_VhPe-zgPl_zk0pttjVAd5S32bglQ3gfrYTgr-kfA7gQpEqf8I1TYr7gmA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:6060/gateway/admin/movie/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6060",
+					"path": [
+						"gateway",
+						"admin",
+						"movie",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

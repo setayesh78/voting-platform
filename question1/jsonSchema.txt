@@ -1,0 +1,40 @@
+{
+    "$schema": "voting platform",
+    "properties": {
+        "center_id": {
+            "description": "voting center id.",
+            "type": "string"
+        },
+        "center_city": {
+            "description": "voting center city.",
+            "type": "string"
+        },
+        "vote_number": {
+            "description": "vote number in center.",
+            "type": "integer",
+            "minimum": 1
+        },
+        "votes": {
+            "description": "array of all votes.",
+            "type": "array",
+            "items": {
+                "national_code": {
+                    "description": "national code of voter",
+                    "type": "string",
+                    "pattern": "^[0-9]{10}$"
+                },
+                "candidate_id": {
+                    "description": "voted candidate id.",
+                    "type": "integer"
+                },
+                "time": {
+                    "description": "Date and time with different time zones",
+                    "type": "string",
+                    "format": "date-time",
+                    "formatMinimum": "2020-01-01T00:00:00.000"
+                }
+            },
+            "maxItems": 200000
+        }
+    }
+}
